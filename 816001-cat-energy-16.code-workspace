@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "less.validate": false,
+    "scss.validate": false,
+    "css.validate": false,
+    "prettier.disableLanguages": ["vue"],
+    "prettier.stylelintIntegration": true
+  }
+}
