@@ -1,0 +1,7 @@
+@import "mixins.scss";
+
+.build-program__slogan {
+  @include font-main-regular(14px, 14px);
+  color: #ffffff;
+  text-transform: uppercase;
+}
