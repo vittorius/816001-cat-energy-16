@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <img src="http://placehold.it/191x39" alt="Cat Energy" class="page-header__logo" width="191" height="39" />
-      <nav class="page-header__nav"><!-- Или page-header__main-nav? --></nav>
+      <nav class="page-header__nav"></nav>
     </header>
     <main class="main">
       <section class="catalog">
@@ -15,11 +15,10 @@
           Каталог продукции
         </h1>
         <ul class="catalog__list">
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
-              <!-- Решил назвать классы product*, чтобы не было тавтологии с catalog__item. -->
-              <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г, курица" class="catalog__item-image" width="140" height="144" />
+          <li class="catalog__item">
+            <section class="catalog__product product">
+              <a class="catalog__product-link" href="catalog-item.html">
+                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г, курица" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"
@@ -27,168 +26,168 @@
                   Cat Energy<br />PRO 500 г
                 </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">500 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">500 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Курица</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Курица</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">700 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">700 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г, курица" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г, курица" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />PRO 1000 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">1000 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">1000 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Курица</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Курица</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">1000 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">1000 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г, рыба" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г, рыба" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />PRO 500 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">500 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">500 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Рыба</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Рыба</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">700 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">700 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г, рыба" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г, рыба" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />PRO 1000 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">1000 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">1000 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Рыба</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Рыба</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">1000 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">1000 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 500 г, гречка" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 500 г, гречка" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />SLIM 500 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">500 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">500 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Гречка</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Гречка</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">400 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">400 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 1000 г, гречка" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 1000 г, гречка" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />SLIM 1000 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">1000 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">1000 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Гречка</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Гречка</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">700 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">700 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog__list-item">
-            <section class="catalog__item product">
+          <li class="catalog__item">
+            <section class="catalog__product product">
               <a href="catalog-item.html">
-                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 500 г, рис" class="catalog__item-image" width="140" height="144" />
+                <img src="http://placehold.it/140x144" alt="Cat Energy SLIM 500 г, рис" class="catalog__product-image" width="140" height="144" />
               </a>
               <h3 class="product__heading">
                 <a class="product__link" href="catalog-item.html"> Cat Energy<br />SLIM 500 г </a>
               </h3>
-              <dl class="product__details">
-                <div class="product__details-row">
-                  <dt class="product__details-param">Объем</dt>
-                  <dd class="product__details-value">500 г</dd>
+              <dl class="product__details-list product-details">
+                <div class="product-details__row">
+                  <dt class="product-details__param">Объем</dt>
+                  <dd class="product-details__value">500 г</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Вкус</dt>
-                  <dd class="product__details-value">Рис</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Вкус</dt>
+                  <dd class="product-details__value">Рис</dd>
                 </div>
-                <div class="product__details-row">
-                  <dt class="product__details-param">Цена</dt>
-                  <dd class="product__details-value">400 Р.</dd>
+                <div class="product-details__row">
+                  <dt class="product-details__param">Цена</dt>
+                  <dd class="product-details__value">400 Р.</dd>
                 </div>
               </dl>
               <a href="order.html" class="product__order-submit button button--cta">Заказать</a>
@@ -207,44 +206,44 @@
           Дополнительные товары
         </h2>
         <ul class="catalog-aux__list">
-          <li class="catalog-aux__list-item">
-            <section class="catalog-aux__item">
-              <h3 class="catalog-aux__heading">Сахарозаменитель</h3>
-              <dl class="catalog-aux__details">
-                <dt class="catalog-aux__item-param">1 упаковка (100 г)</dt>
-                <dd class="catalog-aux__item-value">200 Р.</dd>
+          <li class="catalog-aux__item">
+            <section class="catalog-aux__details aux-details">
+              <h3 class="aux-details__heading">Сахарозаменитель</h3>
+              <dl class="aux-details__list">
+                <dt class="aux-details__param">1 упаковка (100 г)</dt>
+                <dd class="aux-details__value">200 Р.</dd>
               </dl>
-              <a href="catalog-item-aux.html" class="catalog-aux__item-link button button--cta">Заказать</a>
+              <a href="catalog-item-aux.html" class="aux-details__link button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog-aux__list-item">
-            <section class="catalog-aux__item">
-              <h3 class="catalog-aux__heading">Питьевая вода</h3>
-              <dl class="catalog-aux__details">
-                <dt class="catalog-aux__item-param">5 литров</dt>
-                <dd class="catalog-aux__item-value">50 Р.</dd>
+          <li class="catalog-aux__item">
+            <section class="catalog-aux__details aux-details">
+              <h3 class="aux-details__heading">Питьевая вода</h3>
+              <dl class="aux-details__list">
+                <dt class="aux-details__param">5 литров</dt>
+                <dd class="aux-details__value">50 Р.</dd>
               </dl>
-              <a href="catalog-item-aux.html" class="catalog-aux__item-link button button--cta">Заказать</a>
+              <a href="catalog-item-aux.html" class="aux-details__link button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog-aux__list-item">
-            <section class="catalog-aux__item">
-              <h3 class="catalog-aux__heading">Молоко</h3>
+          <li class="catalog-aux__item">
+            <section class="catalog-aux__details aux-details">
+              <h3 class="aux-details__heading">Молоко</h3>
               <dl class="catalog-aux__details">
-                <dt class="catalog-aux__item-param">1 литр</dt>
-                <dd class="catalog-aux__item-value">100 Р.</dd>
+                <dt class="aux-details__param">1 литр</dt>
+                <dd class="aux-details__value">100 Р.</dd>
               </dl>
-              <a href="catalog-item-aux.html" class="catalog-aux__item-link button button--cta">Заказать</a>
+              <a href="catalog-item-aux.html" class="aux-details__link button button--cta">Заказать</a>
             </section>
           </li>
-          <li class="catalog-aux__list-item">
-            <section class="catalog-aux__item">
+          <li class="catalog-aux__item">
+            <section class="catalog-aux__details aux-details">
               <h3 class="catalog-aux__heading">Витамины</h3>
               <dl class="catalog-aux__details">
-                <dt class="catalog-aux__item-param">1 упаковка (30 г)</dt>
-                <dd class="catalog-aux__item-value">300 Р.</dd>
+                <dt class="aux-details__param">1 упаковка (30 г)</dt>
+                <dd class="aux-details__value">300 Р.</dd>
               </dl>
-              <a href="catalog-item-aux.html" class="catalog-aux__item-link button button--cta">Заказать</a>
+              <a href="catalog-item-aux.html" class="aux-details__link button button--cta">Заказать</a>
             </section>
           </li>
         </ul>
