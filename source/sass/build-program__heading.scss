@@ -1,0 +1,6 @@
+@import "mixins.scss";
+
+.build-program__heading {
+  @include font-main-regular(36px, 36px);
+  color: #ffffff;
+}
