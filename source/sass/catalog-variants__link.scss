@@ -1,0 +1,9 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.catalog-variants__link {
+  @include font-main-regular(16px, 16px);
+  @include heading-text-style;
+  color: $color-text-stressed;
+  text-decoration: none;
+}
