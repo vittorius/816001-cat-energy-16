@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Подбор программы - HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="http://placehold.it/191x39" alt="Cat Energy" class="page-header__logo" width="191" height="39" />
+      <nav class="page-header__nav"></nav>
+    </header>
+    <main class="main">
+      <section class="program-builder">
+        <h1 class="program-builder__heading">Подбор программы</h1>
+        <p class="program-builder__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="program-builder__form program-form">
+          <fieldset class="program-form__fieldset">
+            <div class="program-form__row">
+              <label class="program-form__label">
+                Имя:*
+                <input class="program-form__input" name="name" type="text" placeholder="Барсик" required />
+              </label>
+            </div>
+            <div class="program-form__row">
+              <label class="program-form__label">
+                Вес (кг):*
+                <input class="program-form__input" name="weight" type="number" placeholder="7" required />
+              </label>
+            </div>
+            <div class="program-form__row">
+              <label class="program-form__label">
+                Возраст (лет):
+                <input class="program-form__input" name="age" type="number" placeholder="7" />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="program-form__fieldset">
+            <div class="program-form__row">
+              <input type="radio" class="program-form__radio" name="program-type" id="program-type-loss" value="loss" checked />
+              <label class="program-form__label" for="program-type-loss">Похудение</label>
+            </div>
+            <div class="program-form__row">
+              <input type="radio" class="program-form__radio" name="program-type" id="program-type-gain" value="gain" />
+              <label class="program-form__label" for="program-type-gain">Набор массы</label>
+            </div>
+            <div class="program-form__row">
+              <input type="radio" class="program-form__radio" name="program-type" id="program-type-unknown" value="unknown" />
+              <label class="program-form__label" for="program-type-unknown">Не знаю (нужен ваш совет)</label>
+            </div>
+          </fieldset>
+          <fieldset class="program-form__fieldset">
+            <legend class="program-form__legend">
+              Контактные данные (владельца кота)
+            </legend>
+            <div class="program-form__row">
+              <label class="program-form__label">
+                E-mail:*
+                <input class="program-form__input program-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required />
+              </label>
+            </div>
+            <div class="program-form__row">
+              <label class="program-form__label">
+                Телефон:*
+                <input class="program-form__input program-form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="program-form__fieldset">
+            <legend class="program-form__legend">Комментарий</legend>
+            <textarea class="program-form__comment" name="comment" cols="45" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program-form__fieldset">
+            <legend>Дополнительно</legend>
+            <div class="program-form__row">
+              <input type="checkbox" class="program-form__checkbox" name="program-aux" id="program-aux-sugar" value="sugar" checked />
+              <label class="program-form__label" for="program-aux-sugar">Сахарозаменитель</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" class="program-form__checkbox" name="program-aux" id="program-aux-water" value="water" />
+              <label class="program-form__label" for="program-aux-water">Питьевая вода</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" class="program-form__checkbox" name="program-aux" id="program-aux-milk" value="milk" />
+              <label class="program-form__label" for="program-aux-milk">Молоко</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" class="program-form__checkbox" name="program-aux" id="program-aux-vitamines" value="vitamines" />
+              <label class="program-form__label" for="program-aux-vitamines">Витамины</label>
+            </div>
+          </fieldset>
+          <div class="program-form__row">
+            <button class="program-form__submit button" type="submit">Отправить заявку</button>
+          </div>
+          <div class="program-form__row">
+            <span class="program-form__hint">* — Обязательные поля</span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts">
+        <h2 class="visually-hidden">
+          Контакты
+        </h2>
+        <b class="contacts__dealers-invitation">
+          Приглашаем к сотрудничеству дилеров!
+        </b>
+        <address class="contacts__address">
+          <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </address>
+        <p class="contacts__map">
+          <img
+            src="http://placehold.it/320x400"
+            alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+            class="contacts__map-screenshot"
+            width="320"
+            height="400"
+          />
+        </p>
+      </section>
+      <p class="page-footer__logo-holder">
+        <img src="http://placehold.it/191x39" alt="Cat Energy" class="page-footer__logo" width="191" height="39" />
+      </p>
+      <ul class="page-footer__list social-links-list">
+        <li class="social-links-list__item social-links-list__item--vk">
+          <span class="visually-hidden">Vk</span>
+        </li>
+        <li class="social-links-list__item social-links-list__item--instagram">
+          <span class="visually-hidden">Instagram</span>
+        </li>
+        <li class="social-links-list__item social-links-list__item--facebook">
+          <span class="visually-hidden">Facebook</span>
+        </li>
+      </ul>
+      <ul class="page-footer__list html-academy-list">
+        <li class="html-academy-list__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="html-academy-list__link">
+            HTML Academy
+          </a>
+        </li>
+        <li class="html-academy-list__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="html-academy-list__link">
+            <img src="http://placehold.it/27x34" alt="" class="html-academy-list__logo-image" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
