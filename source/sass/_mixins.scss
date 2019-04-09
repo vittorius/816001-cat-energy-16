@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+@mixin font($font-family, $font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font: #{$font-style} #{$font-weight} #{$font-size}/#{$line-height} $font-family, "Arial", sans-serif;
+}
+
+@mixin font-main-regular($font-size, $line-height) {
+  @include font($font-family-main, $font-size, $line-height);
+}
