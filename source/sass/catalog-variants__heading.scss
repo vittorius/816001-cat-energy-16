@@ -1,0 +1,14 @@
+@import "mixins.scss";
+
+.catalog-variants__heading {
+  @include font-main-regular(24px, 37px);
+  color: $color-text-stressed;
+  text-transform: uppercase;
+
+  //   &--gain {
+
+  //   }
+  //   &--loss {
+
+  //   }}
+}
