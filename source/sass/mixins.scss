@@ -7,3 +7,11 @@
 @mixin font-main-regular($font-size, $line-height, $font-weight: normal, $font-style: normal) {
   @include font($font-family-main, $font-size, $line-height, $font-weight, $font-style);
 }
+
+@mixin font-aux-regular($font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  @include font($font-family-aux, $font-size, $line-height, $font-weight, $font-style);
+}
+
+@mixin heading-text-style {
+  text-transform: uppercase;
+}
