@@ -2,6 +2,6 @@
 
 .build-program__slogan {
   @include font-main-regular(14px, 14px);
+  @include heading-text-style;
   color: #ffffff;
-  text-transform: uppercase;
 }

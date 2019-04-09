@@ -2,8 +2,8 @@
 
 .catalog-variants__heading {
   @include font-main-regular(24px, 37px);
+  @include heading-text-style;
   color: $color-text-stressed;
-  text-transform: uppercase;
 
   //   &--gain {
 

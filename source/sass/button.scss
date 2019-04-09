@@ -10,7 +10,7 @@ $color-button: #f2f2f2;
   background-color: $color-button;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase; // не использую @include heading-text-style т.к. семантически кнопка - это не заголовок
   text-decoration: none;
 
   &--cta {
