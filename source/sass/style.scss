@@ -1,13 +1,17 @@
+// globals
 @import "variables.scss";
 @import "fonts.scss";
 @import "button.scss";
 @import "visually-hidden.scss";
+// build-program
 @import "build-program__heading-holder.scss";
 @import "build-program__heading.scss";
 @import "build-program__slogan.scss";
 @import "build-program__product-holder.scss";
+// catalog-variants
 @import "catalog-variants__list.scss";
 @import "catalog-variants__item.scss";
+@import "catalog-variants__variant.scss";
 @import "catalog-variants__heading.scss";
 @import "catalog-variants__description.scss";
 @import "catalog-variants__link.scss";

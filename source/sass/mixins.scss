@@ -15,3 +15,8 @@
 @mixin heading-text-style {
   text-transform: uppercase;
 }
+
+@mixin pseudo {
+  display: table;
+  content: "";
+}

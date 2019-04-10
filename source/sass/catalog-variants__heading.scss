@@ -3,12 +3,53 @@
 .catalog-variants__heading {
   @include font-main-regular(24px, 37px);
   @include heading-text-style;
+
+  $circle-width: 50px;
+  $heading-margin-size: 20px;
+
+  display: flex;
+  position: relative;
+  margin-left: $circle-width + $heading-margin-size;
   color: $color-text-stressed;
 
-  //   &--gain {
+  &::before {
+    @include pseudo;
 
-  //   }
-  //   &--loss {
+    position: absolute;
+    width: $circle-width;
+    height: $circle-width;
+    background-color: $color-leaf;
+    border-radius: 50%;
+    left: -($circle-width + $heading-margin-size);
+  }
 
-  //   }}
+  &--loss::after {
+    @include pseudo;
+
+    $width: 35px;
+
+    order: -1;
+    position: absolute;
+    width: $width;
+    height: 49px;
+    left: -($width + $heading-margin-size + 7px);
+    top: -2px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gain::after {
+    @include pseudo;
+
+    $width: 67px;
+
+    order: -1;
+    position: absolute;
+    width: $width;
+    height: 28px;
+    left: -($width + 12px);
+    top: 12px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
 }
