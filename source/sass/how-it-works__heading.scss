@@ -1,7 +1,5 @@
 @import "mixins.scss";
 
 .how-it-works__heading {
-  @include font-main-regular(36px, 60px);
-
-  color: $color-text-stressed;
+  @include index-main-section-heading;
 }
