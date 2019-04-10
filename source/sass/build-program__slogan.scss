@@ -2,6 +2,7 @@
 
 .build-program__slogan {
   @include font-main-regular(14px, 14px);
-  @include heading-text-style;
+  @include capitalized;
+
   color: #ffffff;
 }

@@ -12,7 +12,7 @@
   @include font($font-family-aux, $font-size, $line-height, $font-weight, $font-style);
 }
 
-@mixin heading-text-style {
+@mixin capitalized {
   text-transform: uppercase;
 }
 

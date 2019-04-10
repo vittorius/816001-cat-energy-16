@@ -7,10 +7,11 @@ $color-button: #f2f2f2;
 // Вопрос: очень долго думал как в будущем делать эту кнопку - инлайновым элементом с padding-ами или блочиным элементом?
 .button {
   @include font-main-regular(14px, 18px);
+  @include capitalized;
+
   background-color: $color-button;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase; // не использую @include heading-text-style т.к. семантически кнопка - это не заголовок
   text-decoration: none;
 
   &--cta {

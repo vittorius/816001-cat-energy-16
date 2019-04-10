@@ -2,7 +2,7 @@
 
 .catalog-variants__heading {
   @include font-main-regular(24px, 37px);
-  @include heading-text-style;
+  @include capitalized;
 
   $circle-width: 50px;
   $heading-gap-left: 20px;
