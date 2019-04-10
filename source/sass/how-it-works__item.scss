@@ -2,16 +2,12 @@
 @import "mixins.scss";
 
 .how-it-works__item {
-  @include font-aux-regular(
-    14px,
-    18px
-  ); // эта строка дублируется в .catalog-variants__description, может быть вынесена в миксин, и внешний вид у этих блоков похож
+  @include index-description-font;
 
   $icon-width: 60px;
   $heading-gap-left: 20px;
 
   position: relative;
-  color: $color-text-plain; // эта строка дублируется в .catalog-variants__description, может быть вынесена в миксин, и внешний вид у этих блоков похож
   margin-left: $icon-width + $heading-gap-left;
   margin-bottom: 32px;
   min-height: 49px;

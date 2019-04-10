@@ -16,9 +16,16 @@
   text-transform: uppercase;
 }
 
+// TODO: возможно, придется убирать index- с этих миксинов - если они понадобятся на других страницах
+
 @mixin index-main-section-heading {
   @include font-main-regular(36px, 60px);
   color: $color-text-stressed;
+}
+
+@mixin index-description-font {
+  @include font-aux-regular(14px, 18px);
+  color: $color-text-plain;
 }
 
 @mixin pseudo {

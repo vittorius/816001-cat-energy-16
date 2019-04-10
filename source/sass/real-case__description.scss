@@ -1,6 +1,5 @@
-@import "variables.scss";
 @import "mixins.scss";
 
-.catalog-variants__description {
+.real-case__description {
   @include index-description-font;
 }
