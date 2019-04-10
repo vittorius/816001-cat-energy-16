@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+.real-case__value {
+  @include capitalized;
+  @include font-main-regular(12px, 12px);
+
+  color: $color-text-stressed;
+}
