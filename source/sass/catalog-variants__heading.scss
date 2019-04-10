@@ -5,11 +5,11 @@
   @include heading-text-style;
 
   $circle-width: 50px;
-  $heading-margin-size: 20px;
+  $heading-gap-left: 20px;
 
   display: flex;
   position: relative;
-  margin-left: $circle-width + $heading-margin-size;
+  margin-left: $circle-width + $heading-gap-left;
   color: $color-text-stressed;
 
   &::before {
@@ -20,7 +20,7 @@
     height: $circle-width;
     background-color: $color-leaf;
     border-radius: 50%;
-    left: -($circle-width + $heading-margin-size);
+    left: -($circle-width + $heading-gap-left);
   }
 
   &--loss::after {
@@ -32,7 +32,7 @@
     position: absolute;
     width: $width;
     height: 49px;
-    left: -($width + $heading-margin-size + 7px);
+    left: -($width + $heading-gap-left + 7px);
     top: -2px;
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
