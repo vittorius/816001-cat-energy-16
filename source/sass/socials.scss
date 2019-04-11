@@ -1,5 +1,9 @@
+@import "variables.scss";
+
 .socials {
   display: flex; // TODO: дополнительные стили для нормального позиционирования ссылок
-  padding: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: $color-bg-plain;
 }

@@ -2,6 +2,7 @@
 @import "fonts.scss";
 @import "button.scss";
 @import "visually-hidden.scss";
+// TODO: подключить normalize.css, чтобы убрать margin на body и вообще
 // build-program
 @import "build-program__heading-holder.scss";
 @import "build-program__heading.scss";
@@ -41,3 +42,7 @@
 // socials
 @import "socials.scss";
 @import "socials__item.scss";
+// copyright
+@import "copyright-list.scss";
+@import "copyright-list__item.scss";
+@import "copyright-list__link.scss";

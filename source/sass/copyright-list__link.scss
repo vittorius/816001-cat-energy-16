@@ -1,0 +1,11 @@
+@import "mixins.scss";
+
+.copyright-list__link {
+  @include font-aux-regular(16px, 16px);
+
+  display: block;
+  width: 27px;
+  height: 20px;
+  color: $color-text-plain;
+  text-decoration: none;
+}
