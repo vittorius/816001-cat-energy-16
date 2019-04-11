@@ -1,0 +1,28 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.build-program__heading {
+  @include font-main-regular(36px, 36px);
+  color: #ffffff;
+}
+
+.build-program__heading-holder {
+  background-color: $leaf;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.build-program__product-holder {
+  background-image: url("../img/index-can-mobile@1x.png");
+  background-size: 280px 270px;
+  width: 280px;
+  height: 270px;
+}
+
+.build-program__slogan {
+  @include font-main-regular(14px, 14px);
+  @include capitalized;
+
+  color: #ffffff;
+}

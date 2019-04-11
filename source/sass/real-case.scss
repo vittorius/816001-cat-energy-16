@@ -1,5 +1,54 @@
-@import "variables.scss";
+@import "mixins.scss";
 
 .real-case {
-  background-color: $color-bg-plain;
+  background-color: $color-bg;
+}
+
+.real-case__heading {
+  @include index-main-section-heading;
+}
+
+.real-case__description {
+  @include index-description-font;
+}
+
+.real-case__importants {
+  display: flex;
+}
+
+.real-case__item-wrapper {
+  display: flex;
+
+  &--important {
+    flex-direction: column-reverse;
+    border: 1px solid #000000; // TODO: удалить нижний край и, возможно, переделать на тени
+  }
+
+  &--aux {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.real-case__param {
+  @include capitalized;
+  @include font-main-regular(12px, 12px);
+  color: $color-text-main;
+
+  // &--important {
+  //   @include font-main-regular(12px, 12px);
+
+  //   color: $color-text-aux;
+  // }
+}
+
+.real-case__value {
+  @include capitalized;
+  @include font-main-regular(12px, 12px);
+
+  color: $color-text-main;
+
+  &--aux {
+    margin: 0;
+  }
 }

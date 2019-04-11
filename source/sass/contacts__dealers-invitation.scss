@@ -1,8 +1,0 @@
-@import "mixins.scss";
-
-.contacts__dealers-invitation {
-  @include font-main-regular(16px, 20px);
-  @include capitalized;
-
-  color: $color-text-stressed;
-}

@@ -5,5 +5,24 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: $color-bg-plain;
+  background-color: $color-bg;
+}
+
+// TODO: удалить сами картинки из source/img
+
+.socials__item {
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
 }

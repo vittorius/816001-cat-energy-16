@@ -1,5 +1,14 @@
 @import "mixins.scss";
 
+.how-it-works__heading {
+  @include index-main-section-heading;
+}
+
+.how-it-works__list {
+  list-style: none;
+  padding: 0;
+}
+
 .how-it-works__item {
   @include index-description-font;
 
@@ -18,7 +27,7 @@
     width: $icon-width;
     height: 60px;
     left: -($icon-width + $heading-gap-left);
-    background-color: $color-leaf;
+    background-color: $leaf;
   }
 
   // TODO: картинки иконок с помощью &::after, display: flex на родителе и order: -1 на самом ::after

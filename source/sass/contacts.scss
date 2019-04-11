@@ -1,5 +1,27 @@
 @import "mixins.scss";
 
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__dealers-invitation {
+  @include font-main-regular(16px, 20px);
+  @include capitalized;
+
+  color: $color-text-main;
+}
+
+.contacts__address {
+  @include font-aux-regular(14px, 20px);
+
+  margin: 0;
+  color: $color-text-aux;
+}
+
+.contacts__address-details {
+  margin: 0;
+}
+
 .contacts__map {
   display: inline-block;
   position: relative;
