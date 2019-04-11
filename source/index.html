@@ -86,7 +86,8 @@
           <div class="real-case__aux">
             <div class="real-case__item-wrapper real-case__item-wrapper--aux">
               <dt class="real-case__param">Затраты на питание:</dt>
-              <dd class="real-case__value">15 000 руб.</dd>
+              <dd class="real-case__value real-case__value--aux">15 000 руб.</dd>
+              <!-- Получается, что real-case__value--aux зависит от того, в каком блоке находится real-case__value, который его имеет. Нехорошо? Стоило бы замиксить еще 1 блок на родительский real-case__item-wrapper?  -->
             </div>
           </div>
         </dl>
