@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+.contacts__address {
+  @include font-aux-regular(14px, 20px);
+
+  margin: 0;
+  color: $color-text-plain;
+}
