@@ -91,23 +91,23 @@
             </div>
           </div>
         </dl>
-        <section class="real-case__slider">
+        <section class="real-case__slider toggle-slider">
           <h3 class="visually-hidden">
             Фото "до" и "после"
           </h3>
-          <ul class="real-case__slide-list">
-            <li class="real-case__slide">
-              <img src="http://placehold.it/311x232" alt="Живой пример - было" class="real-case__slide-picture" width="311" height="232" />
+          <ul class="toggle-slider__list">
+            <li class="toggle-slider__slide">
+              <img src="img/before-mobile@1x.png" alt="Живой пример - было" class="toggle-slider__picture" width="311" height="232" />
             </li>
-            <li class="real-case__slide">
-              <img src="http://placehold.it/311x232" alt="Живой пример - стало" class="real-case__slide-picture" width="311" height="232" />
+            <li class="toggle-slider__slide">
+              <img src="img/after-mobile@1x.png" alt="Живой пример - стало" class="toggle-slider__picture" width="311" height="232" />
             </li>
           </ul>
-          <div class="real-case__slider-controls">
-            <label for="real-case-slide-toggle-before">Было</label>
-            <input type="radio" name="real-case-slide-toggle" id="real-case-slide-toggle-before" class="real-case__slide-toggle" checked />
-            <input type="radio" name="real-case-slide-toggle" id="real-case-slide-toggle-after" class="real-case__slide-toggle" />
-            <label for="real-case-slide-toggle-after">Стало</label>
+          <div class="toggle-slider__controls">
+            <label class="toggle-slider__label" for="slide-toggle-before">Было</label>
+            <input type="radio" name="slide-toggle" id="slide-toggle-before" class="toggle-slider__toggle toggle-slider__toggle--before" checked />
+            <input type="radio" name="slide-toggle" id="slide-toggle-after" class="toggle-slider__toggle toggle-slider__toggle--after" />
+            <label class="toggle-slider__label" for="slide-toggle-after">Стало</label>
           </div>
         </section>
       </section>

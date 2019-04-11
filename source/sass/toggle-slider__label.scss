@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+.toggle-slider__label {
+  @include font-main-regular(16px, 20px);
+  @include capitalized;
+
+  color: $color-text-stressed;
+}
