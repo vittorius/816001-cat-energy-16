@@ -1,0 +1,13 @@
+@import "mixins.scss";
+
+.catalog__heading {
+  @include font-main-regular(36px, 36px);
+
+  margin: 31px 22px 36px;
+  color: $color-text-main;
+}
+
+.catalog__list {
+  padding: 0 0 25px 0;
+  list-style: none;
+}
