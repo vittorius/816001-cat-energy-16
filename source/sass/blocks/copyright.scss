@@ -20,9 +20,13 @@
   color: $color-text-aux;
   text-decoration: none;
 
-  &--logo {
+  &--logo-holder {
     display: block;
     width: 27px;
     height: 34px;
   }
+}
+
+.copyright-list__logo {
+  fill: $brownish-grey;
 }
