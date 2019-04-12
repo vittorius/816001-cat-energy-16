@@ -1,0 +1,52 @@
+@import "mixins.scss";
+
+.real-case {
+  padding: 33px 20px 38px;
+  background-color: $color-bg;
+}
+
+.real-case__heading {
+  margin: 0;
+}
+
+.real-case__importants {
+  display: flex;
+}
+
+.real-case__item-wrapper {
+  display: flex;
+
+  &--important {
+    flex-direction: column-reverse;
+    border: 1px solid #000000; // TODO: удалить нижний край и, возможно, переделать на тени
+  }
+
+  &--aux {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.real-case__param {
+  @include font-main-regular(12px, 12px);
+
+  color: $color-text-main;
+  text-transform: uppercase;
+
+  // &--important {
+  //   @include font-main-regular(12px, 12px);
+
+  //   color: $color-text-aux;
+  // }
+}
+
+.real-case__value {
+  @include font-main-regular(12px, 12px);
+
+  color: $color-text-main;
+  text-transform: uppercase;
+
+  &--aux {
+    margin: 0;
+  }
+}

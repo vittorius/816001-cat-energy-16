@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+@mixin font($font-family, $font-size, $line-height, $font-weight, $font-style) {
+  font: #{$font-style} #{$font-weight} #{$font-size}/#{$line-height} $font-family, "Arial", sans-serif;
+}
+
+@mixin font-main-regular($font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  @include font($font-family-main, $font-size, $line-height, $font-weight, $font-style);
+}
+
+@mixin font-aux-regular($font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  @include font($font-family-aux, $font-size, $line-height, $font-weight, $font-style);
+}
+
+@mixin pseudo {
+  display: table;
+  content: "";
+}

@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.page-footer__controls-holder {
+  padding: 0 20px;
+  background-color: $color-bg;
+}
+
+.page-footer__logo-holder {
+  padding: 39px 96px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin: 0 auto; // TODO: я во многих местах, видимо должен был отцентрировать, но вспомнил только здесь; если надо - добавлю везде, где нужно
+  // TODO: центрирование по вертикали
+}

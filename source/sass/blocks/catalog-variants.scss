@@ -1,0 +1,87 @@
+@import "mixins.scss";
+
+.catalog-variants__heading {
+  @include font-main-regular(24px, 37px);
+
+  $circle-width: 50px;
+  $heading-gap-left: 20px;
+
+  display: flex;
+  position: relative;
+  margin-left: $circle-width + $heading-gap-left;
+  color: $color-text-main;
+  text-transform: uppercase;
+
+  &::before {
+    @include pseudo;
+
+    position: absolute;
+    width: $circle-width;
+    height: $circle-width;
+    background-color: $leaf;
+    border-radius: 50%;
+    left: -($circle-width + $heading-gap-left);
+  }
+
+  &--loss::after {
+    @include pseudo;
+
+    $width: 35px;
+
+    order: -1;
+    position: absolute;
+    width: $width;
+    height: 49px;
+    left: -($width + $heading-gap-left + 7px);
+    top: -2px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gain::after {
+    @include pseudo;
+
+    $width: 67px;
+
+    order: -1;
+    position: absolute;
+    width: $width;
+    height: 28px;
+    left: -($width + 12px);
+    top: 12px;
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog-variants__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-variants__item {
+  background-color: #f2f2f2;
+}
+
+.catalog-variants__variant {
+  padding: 20px 22px 36px;
+}
+
+.catalog-variants__link {
+  @include font-main-regular(16px, 16px);
+
+  color: $color-text-main;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    @include pseudo;
+
+    display: inline-block;
+    margin-left: 12px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,44 @@
+@import "mixins.scss";
+
+.how-it-works__list {
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works__item {
+  $icon-width: 60px;
+  $heading-gap-left: 20px;
+
+  position: relative;
+  margin-left: $icon-width + $heading-gap-left;
+  margin-bottom: 32px;
+  min-height: 49px;
+
+  &::before {
+    @include pseudo;
+
+    position: absolute;
+    width: $icon-width;
+    height: 60px;
+    left: -($icon-width + $heading-gap-left);
+    background-color: $leaf;
+  }
+
+  // TODO: картинки иконок с помощью &::after, display: flex на родителе и order: -1 на самом ::after
+
+  &--cooking {
+    // TODO
+  }
+
+  &--ingredients {
+    // TODO
+  }
+
+  &--results {
+    // TODO
+  }
+
+  &--usage {
+    // TODO
+  }
+}

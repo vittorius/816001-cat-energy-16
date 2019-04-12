@@ -1,0 +1,26 @@
+@import "mixins.scss";
+
+.aux-details__heading {
+  @include font-main-regular(16px, 16px);
+
+  margin: 0;
+  color: $color-text-three;
+  text-transform: uppercase;
+}
+
+.aux-details__list {
+  @include font-aux-regular(14px, 14px);
+
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+  color: $color-text-aux;
+}
+
+.aux-details__value {
+  margin: 0;
+}
+
+.aux-details__link {
+  margin-top: 14px;
+}

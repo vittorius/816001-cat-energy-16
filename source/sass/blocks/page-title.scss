@@ -1,0 +1,21 @@
+.page-title__heading-holder {
+  padding: 29px 37px;
+  background-color: $leaf;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-title__heading {
+  @include font-main-regular(36px, 36px);
+
+  margin: 0;
+  color: #ffffff;
+}
+
+.page-title__slogan {
+  @include font-main-regular(14px, 14px);
+
+  color: #ffffff;
+  text-transform: uppercase;
+}

@@ -1,0 +1,13 @@
+@import "mixins.scss";
+
+.toggle-slider__list {
+  list-style: none;
+  padding: 0;
+}
+
+.toggle-slider__label {
+  @include font-main-regular(16px, 20px);
+
+  color: $color-text-main;
+  text-transform: uppercase;
+}

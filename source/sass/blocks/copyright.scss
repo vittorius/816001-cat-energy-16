@@ -1,0 +1,33 @@
+@import "mixins.scss";
+
+.copyright-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $color-bg;
+}
+
+.copyright-list__item {
+  &--text {
+    min-width: 112px;
+  }
+}
+
+.copyright-list__link {
+  @include font-aux-regular(16px, 16px);
+
+  color: $color-text-aux;
+  text-decoration: none;
+
+  &--logo-holder {
+    display: block;
+    width: 27px;
+    height: 34px;
+  }
+}
+
+.copyright-list__logo {
+  fill: $brownish-grey;
+}

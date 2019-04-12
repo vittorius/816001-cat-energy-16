@@ -1,0 +1,53 @@
+@import "mixins.scss";
+
+.contacts__dealers-info {
+  display: flex;
+  padding: 31px 19px 26px;
+
+  &--catalog {
+    background-color: $color-bg;
+  }
+}
+
+.contacts__part {
+  flex-basis: 123px;
+  flex-grow: 1;
+}
+
+.contacts__dealers-invitation {
+  @include font-main-regular(16px, 20px);
+
+  color: $color-text-main;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include font-aux-regular(14px, 20px);
+
+  margin: 0;
+  color: $color-text-aux;
+}
+
+.contacts__address-details {
+  margin: 0;
+}
+
+.contacts__map {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 400px;
+
+  &::after {
+    @include pseudo;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // TODO: центрирование - временное, потом нужно будет расположить метку в нужном месте
+    width: 50px;
+    height: 50px;
+    background-image: url("../../img/map-pin.png");
+    background-position: 50% 50%; // TODO
+  }
+}
