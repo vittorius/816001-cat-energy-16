@@ -1,0 +1,37 @@
+@import "mixins.scss";
+
+.promo {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  margin: 39px auto 0;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+}
+
+.promo__gift-icon-holder {
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 61px;
+}
+
+.promo__gift-icon {
+  fill: $white;
+}
+
+.promo__link {
+  @include font-aux-regular(16px, 20px);
+
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 190px;
+  transform: translateX(-50%);
+  width: 159px;
+  height: 56px;
+  text-align: center;
+  color: $color-text-four;
+  text-decoration: none;
+}
