@@ -17,10 +17,11 @@
   content: "";
 }
 
-// Вопрос: очень долго думал как в будущем делать эту кнопку - инлайновым элементом с padding-ами или блочиным элементом?
 .button {
   @include font-main-regular(14px, 18px);
 
+  display: block;
+  padding: 14px 0 11px;
   background-color: $color-button;
   color: #ffffff;
   text-align: center;
