@@ -12,22 +12,6 @@
   @include font($font-family-aux, $font-size, $line-height, $font-weight, $font-style);
 }
 
-@mixin capitalized {
-  text-transform: uppercase;
-}
-
-// TODO: возможно, придется убирать index- с этих миксинов - если они понадобятся на других страницах
-
-@mixin index-main-section-heading {
-  @include font-main-regular(36px, 60px);
-  color: $color-text-main;
-}
-
-@mixin index-description-font {
-  @include font-aux-regular(14px, 18px);
-  color: $color-text-aux;
-}
-
 @mixin pseudo {
   display: table;
   content: "";
@@ -36,12 +20,12 @@
 // Вопрос: очень долго думал как в будущем делать эту кнопку - инлайновым элементом с padding-ами или блочиным элементом?
 .button {
   @include font-main-regular(14px, 18px);
-  @include capitalized;
 
   background-color: $color-button;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   &--cta {
     background-color: $color-button-cta;

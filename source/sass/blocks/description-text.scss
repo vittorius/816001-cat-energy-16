@@ -1,0 +1,4 @@
+.description-text {
+  @include font-aux-regular(14px, 18px);
+  color: $color-text-aux;
+}

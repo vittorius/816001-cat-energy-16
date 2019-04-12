@@ -2,7 +2,6 @@
 
 .catalog-variants__heading {
   @include font-main-regular(24px, 37px);
-  @include capitalized;
 
   $circle-width: 50px;
   $heading-gap-left: 20px;
@@ -11,6 +10,7 @@
   position: relative;
   margin-left: $circle-width + $heading-gap-left;
   color: $color-text-main;
+  text-transform: uppercase;
 
   &::before {
     @include pseudo;
@@ -69,10 +69,10 @@
 
 .catalog-variants__link {
   @include font-main-regular(16px, 16px);
-  @include capitalized;
 
   color: $color-text-main;
   text-decoration: none;
+  text-transform: uppercase;
 
   &::after {
     @include pseudo;
@@ -84,8 +84,4 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
-}
-
-.catalog-variants__description {
-  @include index-description-font;
 }

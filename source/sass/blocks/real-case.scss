@@ -4,14 +4,6 @@
   background-color: $color-bg;
 }
 
-.real-case__heading {
-  @include index-main-section-heading;
-}
-
-.real-case__description {
-  @include index-description-font;
-}
-
 .real-case__importants {
   display: flex;
 }
@@ -31,9 +23,10 @@
 }
 
 .real-case__param {
-  @include capitalized;
   @include font-main-regular(12px, 12px);
+
   color: $color-text-main;
+  text-transform: uppercase;
 
   // &--important {
   //   @include font-main-regular(12px, 12px);
@@ -43,10 +36,10 @@
 }
 
 .real-case__value {
-  @include capitalized;
   @include font-main-regular(12px, 12px);
 
   color: $color-text-main;
+  text-transform: uppercase;
 
   &--aux {
     margin: 0;

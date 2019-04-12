@@ -6,9 +6,9 @@
 
 .contacts__dealers-invitation {
   @include font-main-regular(16px, 20px);
-  @include capitalized;
 
   color: $color-text-main;
+  text-transform: uppercase;
 }
 
 .contacts__address {
