@@ -2,6 +2,12 @@
 
 .contacts__wrapper {
   display: flex;
+  padding: 31px 19px 26px;
+}
+
+.contacts__part {
+  flex-basis: 123px;
+  flex-grow: 1;
 }
 
 .contacts__dealers-invitation {
@@ -23,8 +29,10 @@
 }
 
 .contacts__map {
-  display: inline-block;
+  display: block;
   position: relative;
+  width: 320px;
+  height: 400px;
 
   &::after {
     @include pseudo;

@@ -1,8 +1,12 @@
 @import "variables.scss";
 
-.page-footer__logo-holder {
-  height: 94px;
+.page-footer__controls-holder {
+  padding: 0 20px;
   background-color: $color-bg;
+}
+
+.page-footer__logo-holder {
+  padding: 39px 96px;
 }
 
 .page-footer__logo {

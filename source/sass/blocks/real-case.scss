@@ -1,7 +1,12 @@
 @import "mixins.scss";
 
 .real-case {
+  padding: 33px 20px 38px;
   background-color: $color-bg;
+}
+
+.real-case__heading {
+  margin: 0;
 }
 
 .real-case__importants {
