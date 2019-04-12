@@ -1,0 +1,15 @@
+.button {
+  @include font-main-regular(14px, 18px);
+
+  display: block;
+  padding: 14px 0 11px;
+  background-color: $color-button;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--cta {
+    background-color: $color-button-cta;
+  }
+}
