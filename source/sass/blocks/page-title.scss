@@ -1,5 +1,11 @@
+@import "mixins.scss";
+
 .page-title__heading-holder {
-  padding: 29px 37px;
+  $padding-top: 29px;
+  $padding-side: 35px;
+
+  height: 305px - $padding-top;
+  padding: $padding-top $padding-side 0 $padding-side;
   background-color: $leaf;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,13 +16,58 @@
   @include font-main-regular(36px, 36px);
 
   margin: 0;
+  margin-bottom: 19px;
   color: #ffffff;
 }
 
 .page-title__slogan {
   @include font-main-regular(14px, 14px);
 
-  margin-top: 19px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.page-title__product-holder {
+  width: 280px;
+  height: 270px;
+  margin-top: -138px;
+  margin-bottom: 3px;
+  background-image: url("../../img/index-can-mobile@1x.png");
+  background-size: 280px 270px;
+  // TODO: этому блоку как бы не нужны такие же padding-и, как предшествующим ему в потоке,
+  // поэтому я решил не создавать ему лишний враппер, а решить вопрос через background-position. Насколько это правильно и гибко?
+  background-position: 20px center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title__heading-holder {
+    padding: 61px 234px 0 120px; // TODO: padding-right: 234px сильно привязан к размеру шрифта. это нормально?
+    background: none;
+  }
+
+  .page-title__heading {
+    margin-bottom: 33px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $color-text-main;
+  }
+
+  .page-title__slogan {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $color-text-main;
+  }
+
+  .page-title__product-holder {
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+    margin-bottom: 0;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-size: 709px 609px;
+    background-position: 29px center; // TODO: тот же вопрос, что и для базового (mobile) значения этого свойства
+  }
 }
