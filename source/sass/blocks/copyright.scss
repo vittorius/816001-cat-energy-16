@@ -1,11 +1,10 @@
 @import "mixins.scss";
 
 .copyright-list {
+  @include list-reset;
+
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  list-style: none;
   background-color: $color-bg;
 }
 

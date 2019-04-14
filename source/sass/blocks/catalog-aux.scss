@@ -1,6 +1,5 @@
 @import "mixins.scss";
 
-
 .catalog-aux__heading {
   @include font-main-regular(24px, 24px);
 
@@ -9,8 +8,7 @@
 }
 
 .catalog-aux__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .catalog-aux__item {

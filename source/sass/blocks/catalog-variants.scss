@@ -55,8 +55,7 @@
 }
 
 .catalog-variants__list {
-  list-style: none;
-  padding: 0;
+  @include list-reset;
 }
 
 .catalog-variants__item {

@@ -8,8 +8,9 @@
 }
 
 .catalog__list {
+  @include list-reset;
+
   padding: 0 0 25px 0;
-  list-style: none;
 }
 
 .catalog__show-more {
