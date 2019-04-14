@@ -9,7 +9,7 @@
 
   position: relative;
   display: block;
-  padding: 24px;
+  padding: 24px 0;
   box-sizing: border-box;
   color: $color-text-main;
   font-weight: $font-weight-medium;
@@ -17,7 +17,7 @@
   text-align: center;
   text-decoration: none;
 
-  &::after {
+  &::before {
     @include pseudo;
 
     position: absolute;
@@ -26,5 +26,33 @@
     top: 0;
     height: 1px;
     background-color: #ebebeb;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    // TODO: не уверен, что это самое лучшее решение для вертикальной центровки меню, но
+    // вопрос в том, стоит ли рассматривать меню с вертикальными паддингами как отдельный БЭМ блок - я ответил себе "нет",
+    // и это, по идее, соответствует тому, как нас учат на потоке
+    padding-top: 9px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    margin-left: 38px;
+  }
+
+  .main-nav__link {
+    @include font-main-regular(18px, 25px);
+
+    padding: 0;
+    color: $color-text-three;
+
+    &::before {
+      display: none;
+    }
   }
 }

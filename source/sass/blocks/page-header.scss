@@ -1,3 +1,16 @@
 .page-header__logo-holder {
   padding: 11px 20px 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 31px 0 29px;
+  }
+
+  .page-header__logo-holder {
+    height: 59px; // FIXME: временно, пока не добавим нового лого для tablet версии
+    padding: 0;
+  }
+}
