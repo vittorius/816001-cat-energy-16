@@ -1,10 +1,12 @@
 // globals
 @import "fonts.scss";
 @import "normalize.scss";
+// global blocks (must come first)
+@import "blocks/button.scss";
+@import "blocks/visually-hidden.scss";
 // blocks
 @import "blocks/aux-details.scss";
 @import "blocks/build-program.scss";
-@import "blocks/button.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-aux.scss";
 @import "blocks/catalog-holder.scss";
@@ -26,4 +28,3 @@
 @import "blocks/show-more.scss";
 @import "blocks/socials.scss";
 @import "blocks/toggle-slider.scss";
-@import "blocks/visually-hidden.scss";
