@@ -16,6 +16,7 @@
 .page-title__slogan {
   @include font-main-regular(14px, 14px);
 
+  margin-top: 19px;
   color: #ffffff;
   text-transform: uppercase;
 }
