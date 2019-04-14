@@ -6,11 +6,10 @@
 }
 
 .page-footer__logo-holder {
-  padding: 39px 96px;
+  padding: 39px 0;
 }
 
 .page-footer__logo {
   display: block;
-  margin: 0 auto; // TODO: я во многих местах, видимо должен был отцентрировать, но вспомнил только здесь; если надо - добавлю везде, где нужно
-  // TODO: центрирование по вертикали
+  margin: 0 auto;
 }
